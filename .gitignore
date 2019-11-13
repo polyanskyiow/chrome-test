@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+*.iml
+.idea
+target/
+*.log
+*.db
+.clover/
+.checkstyle
+.classpath
+.factorypath
+.fbprefs
+.pmd
+.project
+.springBeans
+.externalToolBuilders
+.settings
+git.properties
+*.DS_Store
+local-env/
+activemq-data/
+local-override.properties
+*.tlog
+.externalToolBuilders/
+
+#ctags generated tags for vim
+tags
+
+#logs
+acceptance-tests-common/ums-client-core/
