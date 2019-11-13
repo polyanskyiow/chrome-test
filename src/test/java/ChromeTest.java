@@ -21,7 +21,7 @@ public class ChromeTest {
         options.addArguments("--disable-web-security");
         options.addArguments("--disable-notifications");
         options.addArguments("--no-default-browser-check");
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
