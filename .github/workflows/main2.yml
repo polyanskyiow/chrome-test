@@ -6,7 +6,7 @@ name: Test actions
 on: 
   workflow_dispatch:
     inputs:
-      mvnCommand:
+      mvn_command:
         description: 'Maven command'     
         required: true
         default: 'clean compile'
@@ -39,4 +39,4 @@ jobs:
               ${{ runner.os }}-maven-  
     # Step that runs the tests
     - name: Build with Maven
-      run: printenv
+      run: echo ${{github.event.inputs.mvn_command}}
