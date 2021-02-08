@@ -6,6 +6,10 @@ name: Test actions
 on: 
   workflow_dispatch:
     inputs:
+      mvnCommand:
+        description: 'Maven command'     
+        required: true
+        default: 'clean compile'
       logLevel:
         description: 'Log level'     
         required: true
@@ -35,4 +39,4 @@ jobs:
               ${{ runner.os }}-maven-  
     # Step that runs the tests
     - name: Build with Maven
-      run: mvn --file pom.xml clean compile
+      run: mvn --file pom.xml $INPUT_MVNCOMMAND
