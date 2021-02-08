@@ -14,8 +14,10 @@ on:
         description: 'Log level'     
         required: true
         default: 'warning'
-      tags:
-        description: 'Test scenario tags' 
+      password:
+        description: 'Some password' 
+        required: true
+        default: 'Some password'
 
 jobs:
   build:
@@ -39,4 +41,4 @@ jobs:
               ${{ runner.os }}-maven-  
     # Step that runs the tests
     - name: Build with Maven
-      run: echo ${{github.event.inputs.mvn_command}}
+      run: echo ::add-mask::${{github.event.inputs.password}} 
