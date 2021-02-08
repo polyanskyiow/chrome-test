@@ -41,4 +41,4 @@ jobs:
               ${{ runner.os }}-maven-  
     # Step that runs the tests
     - name: Build with Maven
-      run: echo ::add-mask::${{github.event.inputs.password}} 
+      run: echo "::add-mask::${{github.event.inputs.password}}"
