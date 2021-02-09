@@ -50,4 +50,10 @@ public class ChromeTest {
         FileUtils.copyFile(scrFile, new File("screenshot.png"));
     }
 
+    @Test
+    public void test2(){}
+
+    @Test
+    public void test3(){}
+
 }
