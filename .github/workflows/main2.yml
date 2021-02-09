@@ -42,7 +42,7 @@ jobs:
     # Step that runs the tests
     - name: Build with Maven
       run: 
-        mvn clean test
+        mvn clean compile
         
     - name: Get Allure history
       uses: actions/checkout@v2
