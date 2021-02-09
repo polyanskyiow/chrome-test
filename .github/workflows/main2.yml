@@ -42,8 +42,7 @@ jobs:
     # Step that runs the tests
     - name: Build with Maven
       run: 
-        echo "::add-mask::${{secrets.TEST_SECRET}}"
-        echo "${{secrets.TEST_SECRET}}"
+        mvn clean test
         
     - name: Get Allure history
       uses: actions/checkout@v2
