@@ -1,0 +1,62 @@
+{
+  "5c3d442bd957ed73982dece7ec1b4b97" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d4132f5641f3616e",
+      "reportUrl" : "https://polyanskyiow.github.io/chrome-test/14//#testresult/d4132f5641f3616e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612913716006,
+        "stop" : 1612913716006,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6403d6ed7d6a1895f26e07f165071f4a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5bd19f38b5f8052b",
+      "reportUrl" : "https://polyanskyiow.github.io/chrome-test/14//#testresult/5bd19f38b5f8052b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612913716008,
+        "stop" : 1612913716009,
+        "duration" : 1
+      }
+    } ]
+  },
+  "7bdb4fade1c6afb25351a20f740878b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "97787788a51d8983",
+      "reportUrl" : "https://polyanskyiow.github.io/chrome-test/14//#testresult/97787788a51d8983",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612913715026,
+        "stop" : 1612913715929,
+        "duration" : 903
+      }
+    } ]
+  }
+}

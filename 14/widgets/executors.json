@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://polyanskyiow.github.io/chrome-test",
+  "buildOrder" : 14,
+  "buildName" : "GitHub Actions Run #552940057",
+  "buildUrl" : "https://github.com/polyanskyiow/chrome-test/actions/runs/552940057",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://polyanskyiow.github.io/chrome-test/14/"
+} ]

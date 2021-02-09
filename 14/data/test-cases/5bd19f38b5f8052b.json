@@ -1,0 +1,94 @@
+{
+  "uid" : "5bd19f38b5f8052b",
+  "name" : "test3",
+  "fullName" : "ChromeTest.test3",
+  "historyId" : "6403d6ed7d6a1895f26e07f165071f4a",
+  "time" : {
+    "start" : 1612913716008,
+    "stop" : 1612913716009,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1612913710949,
+      "stop" : 1612913714882,
+      "duration" : 3933
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1612913716010,
+      "stop" : 1612913716077,
+      "duration" : 67
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ChromeTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ChromeTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "ChromeTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az40-526"
+  }, {
+    "name" : "thread",
+    "value" : "4259@fv-az40-526.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5bd19f38b5f8052b.json",
+  "parameterValues" : [ ]
+}

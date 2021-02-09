@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Feb 09 23:35:16 GMT 2021","Tue Feb 09 23:35:16 GMT 2021","1","Surefire suite","Surefire test","ChromeTest","ChromeTest","test3","test3",""
+"passed","Tue Feb 09 23:35:15 GMT 2021","Tue Feb 09 23:35:15 GMT 2021","903","Surefire suite","Surefire test","ChromeTest","ChromeTest","test","test",""
+"passed","Tue Feb 09 23:35:16 GMT 2021","Tue Feb 09 23:35:16 GMT 2021","0","Surefire suite","Surefire test","ChromeTest","ChromeTest","test2","test2",""
