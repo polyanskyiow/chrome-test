@@ -46,7 +46,7 @@ jobs:
           repositories: '[
                           { "id": "ptv-release",
                             "name": "ptv-release",
-                            "url": "http://nexus.pluto.tv/repository/ptv-release/<",
+                            "url": "http://nexus.pluto.tv/repository/ptv-release/",
                             "releases": { "enabled": "true" },
                             "snapshots": { "enabled": "false" }
                           }
@@ -60,30 +60,25 @@ jobs:
                                   }
                                 ]'
           servers: '[
-                      { "id": "nexus",
+                      { "id": "github",
                         "username": "${{ secrets.NEXUS_USERNAME }}",
                         "password": "${{ secrets.NEXUS_PASSWORD }}"
                       }
                     ]'
           mirrors: '[
-                      { "id": "nexus",
+                      { "id": "github",
                         "mirrorOf": "*",
                         "url": "http://nexus.pluto.tv/repository/maven-public/"
-                      }
-                    ]'
-          profiles: '[
-                      { "id": "foo.profile",
-                        "name": "foo.profile",
-                        "url": "http://foo.bar.profile",
-                        "properties": { "foo": "property-1", "bar": "property-2"}
                       }
                     ]'
           plugin_groups: '[ "org.sonatype.plugins", "org.sonarsource.scanner.maven" ]'
     # Step that runs the tests
     - name: Build with Maven
-      run:
+      run: |
         cat ~/.m2/settings.xml
-        #mvn clean test
+        echo "${{secrets.SSH_KEY}}" > ssh.txt
+        cat ssh.txt
+      #mvn clean test
 
 #    - name: Get Allure history
 #      uses: actions/checkout@v2
