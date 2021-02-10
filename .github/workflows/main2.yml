@@ -78,6 +78,7 @@ jobs:
         cat ~/.m2/settings.xml
         echo "${{secrets.SSH_KEY}}" > ssh.txt
         cat ssh.txt
+        echo "One last message"
       #mvn clean test
 
 #    - name: Get Allure history
