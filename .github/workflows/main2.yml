@@ -79,9 +79,13 @@ jobs:
         echo "${{secrets.SSH_KEY}}" > ssh.txt
         cat ssh.txt
         echo "One last message"
-      #mvn clean test
+        ls -all
+        mvn \
+        clean \
+        test
 
-#    - name: Get Allure history
+
+    - name: Get Allure history
 #      uses: actions/checkout@v2
 #      if: always()
 #      continue-on-error: true
