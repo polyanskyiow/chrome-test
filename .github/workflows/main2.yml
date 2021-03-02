@@ -40,42 +40,44 @@ jobs:
           restore-keys: |
               ${{ runner.os }}-maven-
     # Create settings.xml
-    - name: maven-settings-xml-action
-      uses: whelk-io/maven-settings-xml-action@v14
-      with:
-          repositories: '[
-                          { "id": "ptv-release",
-                            "name": "ptv-release",
-                            "url": "http://nexus.pluto.tv/repository/ptv-release/",
-                            "releases": { "enabled": "true" },
-                            "snapshots": { "enabled": "false" }
-                          }
-                        ]'
-          plugin_repositories: '[
-                                  { "id": "ptv-release",
-                                    "name": "ptv-release",
-                                    "url": "http://nexus.pluto.tv/repository/ptv-release/",
-                                    "releases": { "enabled": "true" },
-                                    "snapshots": { "enabled": "false" }
-                                  }
-                                ]'
-          servers: '[
-                      { "id": "github",
-                        "username": "${{ secrets.NEXUS_USERNAME }}",
-                        "password": "${{ secrets.NEXUS_PASSWORD }}"
-                      }
-                    ]'
-          mirrors: '[
-                      { "id": "github",
-                        "mirrorOf": "*",
-                        "url": "http://nexus.pluto.tv/repository/maven-public/"
-                      }
-                    ]'
-          plugin_groups: '[ "org.sonatype.plugins", "org.sonarsource.scanner.maven" ]'
+#    - name: maven-settings-xml-action
+#      uses: whelk-io/maven-settings-xml-action@v14
+#      with:
+#          repositories: '[
+#                          { "id": "ptv-release",
+#                            "name": "ptv-release",
+#                            "url": "http://nexus.pluto.tv/repository/ptv-release/",
+#                            "releases": { "enabled": "true" },
+#                            "snapshots": { "enabled": "false" }
+#                          }
+#                        ]'
+#          plugin_repositories: '[
+#                                  { "id": "ptv-release",
+#                                    "name": "ptv-release",
+#                                    "url": "http://nexus.pluto.tv/repository/ptv-release/",
+#                                    "releases": { "enabled": "true" },
+#                                    "snapshots": { "enabled": "false" }
+#                                  }
+#                                ]'
+#          servers: '[
+#                      { "id": "github",
+#                        "username": "${{ secrets.NEXUS_USERNAME }}",
+#                        "password": "${{ secrets.NEXUS_PASSWORD }}"
+#                      }
+#                    ]'
+#          mirrors: '[
+#                      { "id": "github",
+#                        "mirrorOf": "*",
+#                        "url": "http://nexus.pluto.tv/repository/maven-public/"
+#                      }
+#                    ]'
+#          plugin_groups: '[ "org.sonatype.plugins", "org.sonarsource.scanner.maven" ]'
     # Step that runs the tests
     - name: Build with Maven
       run: 
-        mvn clean test
+        mvn
+        clean
+        test
         
     - name: Get Allure history
       uses: actions/checkout@v2
