@@ -75,8 +75,8 @@ jobs:
     # Step that runs the tests
     - name: Build with Maven
       run: 
-        mvn \
-        clean \
+        mvn
+        clean
         test
         
     - name: Get Allure history
