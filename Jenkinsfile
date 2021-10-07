@@ -1,5 +1,5 @@
 def gv
-def versions = ['1.1.0', '1.2.0', '1.3.0']
+def versions = ['1.1.0', '1.2.0', '1.3.0',  '1.4.0',  '1.5.0']
 
 pipeline {
     agent any
@@ -38,6 +38,7 @@ pipeline {
             steps {
                 script {
                     gv.deployApp()
+                    println("VERSION = ${params.choices}")
                 }
             }
         }
