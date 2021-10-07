@@ -40,15 +40,15 @@ pipeline {
         }
     }
 
-    node {
-        stage('Stage 1') {
-            // test the false value
-       print 'DEBUG: parameter isFoo = ' + params.image
-       print "DEBUG: parameter isFoo = ${params.image}"
-       sh "echo sh isFoo is ${params.image}"
-       if (params.image == 'test') { print "THIS SHOULD DISPLAY" }
-        }
-    }
+//     node {
+//         stage('Stage 1') {
+//             // test the false value
+//        print 'DEBUG: parameter isFoo = ' + params.image
+//        print "DEBUG: parameter isFoo = ${params.image}"
+//        sh "echo sh isFoo is ${params.image}"
+//        if (params.image == 'test') { print "THIS SHOULD DISPLAY" }
+//         }
+//     }
 }
 
 
