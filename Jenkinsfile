@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     gv.deployApp()
-                    println("VERSION = ${params.choices}")
+                    println("VERSION = ${params.VERSION}")
                 }
             }
         }
