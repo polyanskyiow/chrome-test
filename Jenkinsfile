@@ -1,3 +1,5 @@
+def gv
+
 pipeline {
     agent any
     parameters {
@@ -8,14 +10,14 @@ pipeline {
         stage("init") {
             steps {
                 script {
-                   echo 'init stage...'
+                   gv = load "script.groovy"
                 }
             }
         }
         stage("build") {
             steps {
                 script {
-                    echo 'build stage...'
+                    gv.buildApp()
                 }
             }
         }
@@ -27,29 +29,16 @@ pipeline {
             }
             steps {
                 script {
-                    echo 'test stage...'
+                    gv.testApp()
                 }
             }
         }
         stage("deploy") {
             steps {
                 script {
-                    echo 'deploy stage...'
+                    gv.deployApp()
                 }
             }
         }
     }
-
-//     node {
-//         stage('Stage 1') {
-//             // test the false value
-//        print 'DEBUG: parameter isFoo = ' + params.image
-//        print "DEBUG: parameter isFoo = ${params.image}"
-//        sh "echo sh isFoo is ${params.image}"
-//        if (params.image == 'test') { print "THIS SHOULD DISPLAY" }
-//         }
-//     }
 }
-
-
-
